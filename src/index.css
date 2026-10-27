@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Manrope:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap');
+
+:root {
+  --kseb-forest-900: #043828;
+  --kseb-forest-800: #064e3b;
+  --kseb-green-700: #086d4e;
+  --kseb-green-600: #0b805c;
+  --kseb-green-500: #10b981;
+  --kseb-green-100: #d1fae5;
+  --kseb-green-50: #ecfdf5;
+
+  --kseb-gold-600: #d97706;
+  --kseb-gold-500: #f59e0b;
+  --kseb-gold-100: #fef3c7;
+  --kseb-gold-50: #fffbeb;
+
+  --kseb-red-600: #dc2626;
+  --kseb-red-500: #ef4444;
+  --kseb-red-100: #fee2e2;
+  --kseb-red-50: #fef2f2;
+
+  --kseb-blue-600: #2563eb;
+  --kseb-blue-50: #eff6ff;
+
+  --surface-page: #f4f7f6;
+  --surface-card: #ffffff;
+  --surface-card-subtle: #f9fbfb;
+  --surface-border: #e2e8f0;
+  --surface-border-subtle: #edf2f7;
+
+  --text-primary: #0f172a;
+  --text-secondary: #475569;
+  --text-muted: #64748b;
+  --text-light: #94a3b8;
+
+  --shadow-xs: 0 1px 2px 0 rgba(16, 24, 40, 0.05);
+  --shadow-sm: 0 1px 3px 0 rgba(16, 24, 40, 0.08), 0 1px 2px 0 rgba(16, 24, 40, 0.04);
+  --shadow-md: 0 4px 12px -2px rgba(16, 24, 40, 0.08), 0 2px 6px -2px rgba(16, 24, 40, 0.04);
+  --shadow-lg: 0 12px 24px -4px rgba(16, 24, 40, 0.1), 0 4px 8px -2px rgba(16, 24, 40, 0.05);
+  --shadow-glow: 0 0 20px rgba(11, 128, 92, 0.2);
+
+  --font-sans: 'Plus Jakarta Sans', 'DM Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 18px;
+  --radius-xl: 24px;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+html, body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  background: var(--surface-page);
+  color: var(--text-primary);
+  font-family: var(--font-sans);
+  font-size: 15px;
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#root {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+input, button, select, textarea {
+  font-family: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
