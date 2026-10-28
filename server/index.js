@@ -12,7 +12,14 @@ const authRoutes = require('./routes/authRoutes');
 const app = express();
 const PORT = process.env.PORT || 5000;
 
-app.use(cors({ origin: 'http://localhost:5173' }));
+const allowedOrigins = [
+  'http://localhost:5173',
+  'https://kseb-power-connect-ktbv.vercel.app'
+];
+
+app.use(cors({
+  origin: allowedOrigins
+}));
 app.use(express.json());
 
 // Main API route
