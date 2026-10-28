@@ -4,8 +4,10 @@ import L from 'leaflet'
 import 'leaflet/dist/leaflet.css'
 import './App.css'
 
-const API_URL = 'http://localhost:5000/api/outages'
-const AUTH_URL = 'http://localhost:5000/api/auth'
+const API_BASE_URL = import.meta.env.VITE_API_URL || 'http://localhost:5000';
+
+const API_URL = `${API_BASE_URL}/api/outages`;
+const AUTH_URL = `${API_BASE_URL}/api/auth`;
 
 // Comprehensive coordinates lookup for Kerala districts and major towns
 const KERALA_COORDINATES = {
